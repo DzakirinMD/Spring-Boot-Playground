@@ -1,0 +1,2 @@
+CREATE DATABASE student;
+GRANT ALL PRIVILEGES ON DATABASE "student" TO postgres;
