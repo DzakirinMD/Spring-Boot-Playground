@@ -57,7 +57,7 @@ public class StudentService {
             studentEntity.setName(name);
         }
 
-        if (email != null && email.length() > 0 && !Objects.equals(studentEntity.getEmail(), email)){
+        if (email != null && email.length() > 0){
             Optional<StudentEntity> studentEntityOptional = studentRepository.findStudentByEmail(email);
             if (studentEntityOptional.isPresent()){
                 throw new IllegalStateException("Email already exist !");
