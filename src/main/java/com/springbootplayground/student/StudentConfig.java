@@ -24,15 +24,13 @@ public class StudentConfig {
             StudentEntity jamal = new StudentEntity(
                     "Jamal",
                     "jamal@gmail.com",
-                    LocalDate.of(1999, APRIL, 3),
-                    22
+                    LocalDate.of(1999, APRIL, 3)
             );
 
             StudentEntity farah = new StudentEntity(
                     "farah",
                     "farah@gmail.com",
-                    LocalDate.of(1995, JUNE, 25),
-                    27
+                    LocalDate.of(1995, JANUARY, 25)
             );
 
             repository.saveAll(List.of(jamal, farah));
