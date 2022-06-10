@@ -28,14 +28,14 @@ public class StudentConfig {
                     22
             );
 
-            StudentEntity kasim = new StudentEntity(
-                    "Kasim",
-                    "kasim@gmail.com",
+            StudentEntity farah = new StudentEntity(
+                    "farah",
+                    "farah@gmail.com",
                     LocalDate.of(1995, JUNE, 25),
                     27
             );
 
-            repository.saveAll(List.of(jamal, kasim));
+            repository.saveAll(List.of(jamal, farah));
         };
     }
 
