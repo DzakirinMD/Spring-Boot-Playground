@@ -20,6 +20,8 @@ public class StudentController {
         this.studentService = studentService;
     }
 
+    // enable cors for React to call get API
+    @CrossOrigin
     @GetMapping
     public List<StudentEntity> getStudents(){
         return studentService.getStudents();
