@@ -1,8 +1,8 @@
 spring:
   datasource:
-    url: 'jdbc:postgresql://localhost:55000/student'
-    username: postgres
-    password: postgrespw
+    url: 'jdbc:postgresql://localhost:5434/student'
+    username: zacktest
+    password: zacktest
   jpa:
     hibernate:
       ddl-auto: create-drop
