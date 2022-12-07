@@ -35,3 +35,7 @@ Package and run application:
 6. ```java -jar spring-boot-playground-0.0.1-SNAPSHOT.jar```
    1. Specify port: ```java -jar spring-boot-playground-0.0.1-SNAPSHOT.jar --server.port=8052```
    2. press ```ctrl + c``` to stop the application in server
+
+```bash
+$curl localhost:8081/api/v1/student -u user:password
+```

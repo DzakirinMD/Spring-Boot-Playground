@@ -4,8 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
-import java.time.LocalDate;
-import java.time.Month;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
@@ -22,6 +20,10 @@ public class StudentService {
 
     public List<StudentEntity> getStudents(){
         return studentRepository.findAll();
+    }
+
+    public Optional<StudentEntity> getSingleStudent(Long id) {
+        return studentRepository.findById(id);
     }
 
     public void addNewStudent(StudentEntity studentEntity) {

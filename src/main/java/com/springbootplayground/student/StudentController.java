@@ -1,12 +1,15 @@
 package com.springbootplayground.student;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping("api/v1/student")
+@Validated
 public class StudentController {
 
     /**
@@ -25,6 +28,13 @@ public class StudentController {
     @GetMapping
     public List<StudentEntity> getStudents(){
         return studentService.getStudents();
+    }
+
+    // find single student
+    @GetMapping("/{id}")
+    public Optional<StudentEntity> getSingleStudent(@PathVariable Long id){
+        return studentService.getSingleStudent(id);
+
     }
 
     @PostMapping
