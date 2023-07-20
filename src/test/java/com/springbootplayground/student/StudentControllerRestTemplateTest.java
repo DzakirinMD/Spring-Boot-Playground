@@ -31,7 +31,6 @@ import static org.junit.Assert.assertEquals;
 public class StudentControllerRestTemplateTest {
 
     private static final ObjectMapper om = new ObjectMapper();
-
     @Autowired
     private TestRestTemplate restTemplate;
 
