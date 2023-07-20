@@ -40,6 +40,13 @@ public class Customer {
 
     }
 
+    public Customer(Long id, String name, String email, LocalDate dob) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.dob = dob;
+    }
+
     public Customer(String name, String email, LocalDate dob) {
         this.name = name;
         this.email = email;
