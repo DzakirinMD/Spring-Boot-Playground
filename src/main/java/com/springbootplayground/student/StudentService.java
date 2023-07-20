@@ -69,6 +69,14 @@ public class StudentService {
         /*
           REASON we dont use studentRepository.save(studentEntity); in this method
           because we already have the @Transactional
+
+          Database Operations: When you perform database operations like inserting, updating or deleting data, you may
+          want to use @Transactional to ensure that these operations are executed within a transaction,
+          so that the database remains in a consistent state even if there are errors or exceptions during the execution.
+
+          if there are any database operations involved, it's a good practice to use @Transactional to ensure that the
+          operations are executed within a single transaction, and the database is in a consistent state at the end of
+          the transaction.
          */
     }
 }
