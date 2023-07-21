@@ -1,5 +1,7 @@
-package com.springbootplayground.customer;
+package com.springbootplayground.customer.entity.mapper;
 
+import com.springbootplayground.customer.entity.dto.CustomerDTO;
+import com.springbootplayground.customer.entity.Customer;
 import org.springframework.stereotype.Service;
 
 import java.util.function.Function;
@@ -16,7 +18,8 @@ public class CustomerDTOMapper implements Function<Customer, CustomerDTO> {
     public CustomerDTO apply(Customer customer) {
         return new CustomerDTO(
                 customer.getId(),
-                customer.getName()
+                customer.getName(),
+                customer.getCustomerCar().getModel()
         );
     }
 }

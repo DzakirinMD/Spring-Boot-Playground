@@ -1,5 +1,6 @@
-package com.springbootplayground.customer;
+package com.springbootplayground.customer.repository;
 
+import com.springbootplayground.customer.entity.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

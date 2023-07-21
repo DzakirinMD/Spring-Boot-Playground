@@ -1,4 +1,4 @@
-package com.springbootplayground.customer;
+package com.springbootplayground.customer.entity.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -12,4 +12,5 @@ import lombok.Data;
 public class CustomerDTO {
     private Long id;
     private String name;
+    private String customerDTO;
 }

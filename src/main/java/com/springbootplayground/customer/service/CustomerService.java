@@ -1,5 +1,9 @@
-package com.springbootplayground.customer;
+package com.springbootplayground.customer.service;
 
+import com.springbootplayground.customer.entity.dto.CustomerDTO;
+import com.springbootplayground.customer.entity.mapper.CustomerDTOMapper;
+import com.springbootplayground.customer.exception.CustomerResourceNotFoundException;
+import com.springbootplayground.customer.repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

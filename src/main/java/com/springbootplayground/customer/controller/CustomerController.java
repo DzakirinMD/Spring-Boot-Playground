@@ -1,5 +1,7 @@
-package com.springbootplayground.customer;
+package com.springbootplayground.customer.controller;
 
+import com.springbootplayground.customer.entity.dto.CustomerDTO;
+import com.springbootplayground.customer.service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

@@ -1,4 +1,4 @@
-package com.springbootplayground.customer;
+package com.springbootplayground.customer.entity;
 
 import lombok.AccessLevel;
 import lombok.Data;
@@ -8,6 +8,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import javax.persistence.Transient;
@@ -36,21 +37,26 @@ public class Customer {
     @Getter(AccessLevel.NONE)
     private Integer age;
 
+    @ManyToOne
+    private CustomerCar customerCar;
+
     public Customer() {
 
     }
 
-    public Customer(Long id, String name, String email, LocalDate dob) {
+    public Customer(Long id, String name, String email, LocalDate dob, CustomerCar customerCar) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.dob = dob;
+        this.customerCar = customerCar;
     }
 
-    public Customer(String name, String email, LocalDate dob) {
+    public Customer(String name, String email, LocalDate dob, CustomerCar customerCar) {
         this.name = name;
         this.email = email;
         this.dob = dob;
+        this.customerCar = customerCar;
     }
 
     public Integer getAge() {
